@@ -30,7 +30,7 @@ export class UserController {
   addNewUser(@Body() addNewUserDto: AddNewUserDto) {
     return this.userService.addNewUser(addNewUserDto);
   }
-  //     @Post('login')
+
   @Patch('/:userId')
   updateAnyUser(
     @Body() updateUserDto: updateUserDto,

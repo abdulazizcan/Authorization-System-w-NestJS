@@ -1,0 +1,20 @@
+@URL = http://localhost:3000
+
+GET {{URL}}
+
+###
+POST  {{URL}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "abdlzzcan@gmail.com",
+    "password": "1234"
+}    
+
+###
+PATCH {{URL}}/6
+
+{    
+    "email": "abdlzzcan@gmail.com",
+    "password": "1234"
+}

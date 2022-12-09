@@ -18,4 +18,6 @@ export class User {
   password: string;
   @Column({ default: false })
   isActive: boolean;
+  @Column({default:false})
+  role:string
 }

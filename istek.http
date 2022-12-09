@@ -6,10 +6,19 @@ GET {{URL}}
 POST  {{URL}}/auth/login
 Content-Type: application/json
 
-{
-    "email": "abdlzzcan@gmail.com",
-    "password": "124"
-}    
+{    
+        "email": "frk@gmail.com",
+        "password": "254"
+}  
+###
+GET  {{URL}}/profile/userProfile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZya0BnbWFpbC5jb20iLCJzdWIiOjIsImlhdCI6MTY2OTkzMDkyMSwiZXhwIjoxNjY5OTMwOTgxfQ.REzcerCOXZojWvwl1okic78oqR_7jmBkphHOnbiYrDI
+
+{    
+        "email": "frk@gmail.com",
+        "password": "254"
+}  
 
 ###
 PATCH {{URL}}/6

@@ -16,11 +16,11 @@ import { UserService } from './user.service';
 @Controller()
 export class UserController {
   constructor(private userService: UserService) {}
+
   @Get()
   getUsers() {
     return this.userService.getUsers();
   }
-
   @Get('/:userId')
   findAnyUser(@Param('userId') userId: number) {
     return this.userService.findAnyUser(userId);

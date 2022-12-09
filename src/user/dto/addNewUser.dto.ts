@@ -13,4 +13,6 @@ export class AddNewUserDto {
   @IsNotEmpty()
   password: string;
   isActive: boolean;
+  @IsString()
+  role: string;
 }
